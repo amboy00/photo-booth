@@ -1,18 +1,18 @@
 #!/bin/sh
 #
 #
+clear
 echo "Warming up the camera!\n"
 
 # Take a bunch of photos
-imagesnap -w 2 -t 0.5 &
-PID=$!
-sleep 8
-kill $PID
-
+for (( i=0 ; i < 5 ; i++ ))
+do
+  imagesnap -w 2 snapshot-$i.jpg
+  clear
+  jp2a --colors  snapshot-$i.jpg
+done
 # Make a gif
 convert -dispose none -delay 20 *.jpg -scale 500x281 -size 500x281 source.gif
-
-# Capture argument
 wflag=
 while getopts 'w:' OPTION
 do
@@ -35,4 +35,5 @@ fi
 
 # remove image files
 find *.jpg | xargs rm
-
+echo "output.gif created. Showing in Finder."
+open .

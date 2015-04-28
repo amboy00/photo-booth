@@ -6,6 +6,7 @@ Requires ImageMagick
 
 ```
 brew install imagemagick
+brew install jp2a
 ```
 
 Requires a camera on the computer to work.
