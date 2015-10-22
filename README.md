@@ -22,3 +22,7 @@ Run the shell script _gifme_.
 ## Use with caution!
 
 Currently uses a ```rm``` command that isn't very secure.  Someone could make this an alias and run it from the wrong directory. Make the clean up process safer.  Only run this script from this directory.
+
+## Optional
+
+In the script, we have a command that posts to Twitter using [t](https://github.com/sferik/t).  It takes some set up, but it's fun too.

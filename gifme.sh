@@ -50,5 +50,5 @@ sleep 1
 
 # open .
 
-$(t update 'Live from the photo bash #frontporchio' -f output.gif)
+$(t update 'Showing of the Photo Booth #frontporchio' -f output.gif)
 # photo bash.  Get it?  Bash!!!
