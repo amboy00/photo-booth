@@ -8,7 +8,10 @@ Requires ImageMagick and other packages installed via homebrew
 brew install imagesnap
 brew install imagemagick
 brew install jp2a
+npm install picture-tube -g
 ```
+
+> Note:  THis script can run either `jp2a` or `picture-tube`.  The former uses ASCII text and a limited terminal color pallet to print the image to screen.  The latter uses background text colors and a higher pallet to print the image at a specified width. Both of these are fine, but some terminals do not support large color pallets.  You can change the script where this is used.
 
 ### Twitter
 
